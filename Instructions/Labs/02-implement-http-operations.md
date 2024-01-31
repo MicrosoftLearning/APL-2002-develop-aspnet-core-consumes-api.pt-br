@@ -114,9 +114,9 @@ O aplicativo Web Fruit exibe os dados de exemplo da API na home page. Você prec
 
 1. Salve as alterações em *Program.cs*.
 
-### Tarefa 2: implementar a operação `GET`
+### Tarefa 2: implementar a operação GET
 
-1. Selecione o arquivo *Index.cshtml.cs* no painel **Explorer** a fim de abri-lo para edição.
+1. Selecione o arquivo *Index.cshtml.cs* no painel **Explorer** para abri-lo para edição.
 
 1. Adicione o seguinte código entre os comentários `// Begin GET operation code` e `// End GET operation code`.
 
@@ -158,13 +158,13 @@ O aplicativo Web Fruit exibe os dados de exemplo da API na home page. Você prec
 
 1. Para continuar com o exercício, feche o navegador ou a guia do navegador e, no Visual Studio Code, selecione **Executar \| Parar depuração** ou **Shift + F5**.
 
-## Implementar código para as operações `POST`, `PUT` e `DELETE`
+## Implementar código para as operações POST, PUT e DELETE
 
-Nesta seção, você adicionará um código ao projeto para habilitar as funcionalidades **Adicionar à lista**, **Editar** e **Excluir** no aplicativo Web. 
+Nesta seção, você adiciona código ao projeto para ativar as funcionalidades **Adicionar à lista**, **Editar** e **Excluir** no aplicativo Web. 
 
-### Tarefa 1: implementar a operação `POST`
+### Tarefa 1: implementar a operação POST
 
-1. Selecione o arquivo *Add.cshtml.cs* no painel **Explorer** a fim de abri-lo para edição.
+1. Selecione o arquivo *Add.cshtml.cs* no painel **Explorer** para abri-lo para edição.
 
 1. Adicione o seguinte código entre os comentários `// Begin POST operation code` e `// End POST operation code`.
 
@@ -208,9 +208,9 @@ Nesta seção, você adicionará um código ao projeto para habilitar as funcion
 
 1. Para continuar com o exercício, feche o navegador ou a guia do navegador e, no Visual Studio Code, selecione **Executar \| Parar depuração** ou **Shift + F5**.
 
-### Tarefa 1: implementar a operação `PUT`
+### Tarefa 1: implementar a operação PUT
 
-1. Selecione o arquivo *Edit.cshtml.cs* no painel **Explorer** a fim de abri-lo para edição.
+1. Selecione o arquivo *Edit.cshtml.cs* no painel **Explorer** para abri-lo para edição.
 
 1. Adicione o seguinte código entre os comentários `// Begin PUT operation code` e `// End PUT operation code`.
 
@@ -256,9 +256,9 @@ Nesta seção, você adicionará um código ao projeto para habilitar as funcion
 
 1. Para continuar com o exercício, feche o navegador ou a guia do navegador e, no Visual Studio Code, selecione **Executar \| Parar depuração** ou **Shift + F5**.
 
-### Tarefa 1: implementar a operação `DELETE`
+### Tarefa 1: implementar a operação DELETE
 
-1. Selecione o arquivo *Delete.cshtml.cs* no painel **Explorer** a fim de abri-lo para edição.
+1. Selecione o arquivo *Delete.cshtml.cs* no painel **Explorer** para abri-lo para edição.
 
 1. Adicione o seguinte código entre os comentários `// Begin DELETE operation code` e `// End DELETE operation code`.
 
@@ -291,17 +291,16 @@ Nesta seção, você adicionará um código ao projeto para habilitar as funcion
 
 1. No menu superior do Visual Studio Code, selecione **Executar \| Iniciar depuração** ou selecione **F5**. Depois que o projeto for concluído, uma janela do navegador deve ser iniciada com o aplicativo Web em execução
 
-1. Escolha um item na lista para excluir e selecione o botão **Excluir**. 
-
-1. Edite o **Fruit Name** e o campo **Available?**. Em seguida, selecione **Atualizar**.
+1. Escolha um item na lista para excluir e selecione o botão **Excluir**.
+2. Na página Excluir, verifique se o item selecionado é exibido e clique no botão **Excluir**.
 
 1. Verifique se o item não aparece mais na lista. A mensagem de êxito/falha na parte superior da página mostrará se houve um problema.
 
 Quando tudo estiver pronto para terminar o exercício:
 
-* Feche o navegador ou a guia do navegador. No Visual Studio Code, selecione **Executar \| Parar depuração** ou **Shift + F5**. 
+* Feche o navegador ou a guia do navegador e, no Visual Studio Code, selecione **Executar \| Parar depuração** ou **Shift + F5**. 
 
-* Pare a API Fruit inserindo `Ctrl + C` no terminal em que está sendo executada.
+* Pare a API Fruit digitando **Ctrl + C** no terminal em que ela está sendo executada.
 
 ## Revisão
 
