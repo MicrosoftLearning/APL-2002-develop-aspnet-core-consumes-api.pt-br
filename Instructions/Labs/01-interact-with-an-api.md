@@ -18,7 +18,7 @@ Após concluir este exercício, você poderá:
 Para realizar o exercício, você precisará ter as seguintes ferramentas instaladas no sistema:
 
 * [Visual Studio Code](https://code.visualstudio.com)
-* [O SDK mais recente do .NET 7.0](https://dotnet.microsoft.com/download/dotnet/7.0)
+* [O SDK mais recente do .NET 8.0](https://dotnet.microsoft.com/download/dotnet/8.0)
 * [A extensão do C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) para Visual Studio Code
 * A extensão [Recursos do Azure](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups) para Visual Studio Code.
 * A extensão do [Serviço de Aplicativo do Azure](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice) para o Visual Studio Code.
@@ -110,13 +110,13 @@ Nesta seção, você:
 
 ### Tarefa 1: executar uma operação `GET`
 
-1. Expanda a operação **GET** na seção **Obter todas as frutas** clicando em qualquer lugar na caixa da operação **GET**.
+1. Expanda a operação **GET** com o descritor **Obter todas as frutas** clicando em qualquer lugar na caixa da operação **GET**.
 
 1. Explore as seções da operação e observe as informações mostradas na tabela a seguir.
 
     | Seção | Descrição |
     |---|--|
-    | **Ponto de extremidade** | Mostrado no cabeçalho da operação. O ponto de extremidade é mostrado como `/fruitlist`. O URI completo é a URL base da API associada com o ponto de extremidade especificado, `http://localhost:5050/fruitlist` no exemplo. |
+    | **Ponto de extremidade** | Mostrado no cabeçalho da operação. O ponto de extremidade é mostrado como `/fruits`. O URI completo é a URL base da API associada com o ponto de extremidade especificado, `http://localhost:5050/fruits` no exemplo. |
     | **Parâmetros** | Nenhum necessário para esta operação. |
     | **Tipo de mídia** | Especifica a codificação do tipo de mídia que a operação retornará. |
     | **Valor de exemplo** | Exibe o esquema dos dados retornados pela operação. Essa operação retorna uma matriz JSON. |
@@ -130,13 +130,13 @@ Nesta seção, você:
 
 ### Tarefa 2: executar uma operação `POST`
 
-1. Expanda a operação **POST** na seção **Adicionar frutas à lista** clicando em qualquer lugar na caixa da operação **POST**.
+1. Expanda a operação **POST** com o descritor **Criar nova fruta** clicando em qualquer lugar na caixa da operação **POST**.
 
 1. Explore as seções da operação e observe as informações mostradas na tabela a seguir.
 
     | Seção | Descrição |
     |---|--|
-    | **Ponto de extremidade** | O ponto de extremidade é mostrado como `/fruitlist`. O URI completo é a URL base da API associada com o ponto de extremidade especificado, `http://localhost:5050/fruitlist` no exemplo. |
+    | **Ponto de extremidade** | O ponto de extremidade é mostrado como `/fruits`. O URI completo é a URL base da API associada com o ponto de extremidade especificado, `http://localhost:5050/fruits` no exemplo. |
     | **Parâmetros** | Nenhum necessário para esta operação. |
     | **Corpo da solicitação** | O **corpo da solicitação** é necessário, pois a API espera que os dados sejam adicionados à lista e aguarda o tipo de mídia `application/json`. |
     | **Valor de exemplo** | Exibe o esquema dos dados que a API espera receber. |  
@@ -160,17 +160,17 @@ Nesta seção, você:
     * **URL de solicitação:** a URL acessada na operação.
     * **Resposta do servidor:** mostra o código de êxito da operação e o **Corpo da resposta** exibe o registro adicionado ao banco de dados.
 
-1. Execute o comando `GET` na seção **Obter todas as frutas na lista** e observe que um registro para *Pera* foi incluído.
+1. Execute o comando `GET` na seção **Obter todas as frutas** e observe que um registro para *Pêra* foi incluído.
 
 ### Tarefa 3: executar uma operação `DELETE`
 
-1. Expanda a operação **DELETE** na seção **Excluir fruta por Id** clicando em qualquer lugar na caixa da operação **DELETE**.
+1. Expanda a operação **DELETE** com o descritor **Excluir fruta por Id** clicando em qualquer lugar na caixa da operação **DELETE**.
 
 1. Explore as seções da operação e observe as informações mostradas na tabela a seguir.
 
     | Seção | Descrição |
     |---|--|
-    | **Ponto de extremidade** | O ponto de extremidade é mostrado como `/fruitlist/{id}`. O URI completo é a URL base da API associada com o `id` especificado para exclusão. Por exemplo, `http://localhost:5050/fruitlist/1` aponta para o registro em que `id` é igual a `1`.
+    | **Ponto de extremidade** | O ponto de extremidade é mostrado como `/fruits/{id}`. O URI completo é a URL base da API associada com o `id` especificado para exclusão. Por exemplo, `http://localhost:5050/fruits/1` aponta para o registro em que `id` é igual a `1`.
     | **Parâmetros** | Requer que o `id` do registro seja passado na URL da solicitação. |
 
 1. Para executar a operação, selecione o botão **Experimentar**. 
@@ -183,13 +183,13 @@ Nesta seção, você:
     * **Corpo da resposta:** exibe o registro excluído.
     * **Código:** mostra o código de êxito da operação.
 
-1. Execute o comando `GET` na seção **Obter todas as frutas na lista** e observe que o registro da *Maçã* foi excluído.
+1. Execute o comando `GET` na seção **Obter todas as frutas** e observe que o registro da *Maçã* foi excluído.
 
-Quando você estiver pronto, avance para a próxima seção do exercício:
+Quando você estiver pronto para passar para a próxima seção do exercício:
 
-* Feche o navegador e pare a API Fruit inserindo `Ctrl + C` no terminal em que está sendo executada.
+* Feche o navegador e interrompa a API Fruit digitando **Ctrl + C** no terminal em que ela está sendo executada.
 
-## Publique a API no Serviço de Aplicativo do Azure
+## Publicar a API no Serviço de Aplicativo do Azure
 
 Nesta seção, você:
 
@@ -220,7 +220,7 @@ Nesta seção, você:
 
 1. Selecione **+Criar novo grupo de recursos** e aceite o valor padrão ou insira `fruitapi-rg`.
 
-1. Selecione **.NET 7 (STS)** para a pilha de runtime.
+1. Selecione **.NET 8 (LTS)** na pilha de runtime.
 
 1. Selecione **Linux** como sistema operacional
 
@@ -242,7 +242,9 @@ A ferramenta criará os recursos necessários no Azure e compilará o código.
 
 1. Quando a implantação for concluída, um novo pop-up aparecerá com a opção **Procurar no site**. Em seguida, selecione **Procurar no site**.
 
-1. Na janela do navegador que abrir, insira `/swagger` no final da URL. 
+1. Na janela do navegador que abrir, talvez seja necessário adicionar `/fruits` no final da URL. Você verá a saída bruta da API mostrando todos os dados.
+
+    >**OBSERVAÇÃO:** a interface do usuário do Swagger está desativada porque está habilitada apenas para ambientes de desenvolvimento. A implantação no Serviço de Aplicativo é considerada um ambiente não de desenvolvimento, a menos que você execute uma configuração adicional.
 
 Parabéns, você implantou com êxito a API no Serviço de Aplicativo do Azure.
 
