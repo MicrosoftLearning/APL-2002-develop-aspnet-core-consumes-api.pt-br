@@ -69,7 +69,7 @@ Nesta seção, você:
 
     ![Captura de tela mostrando a estrutura do projeto FruitAPI.](media/api-project-structure.png)
 
-1. Abra um Terminal selecionando **Terminal** e, em seguida, **Novo Terminal** ou use o atalho de teclado **Ctrl+Shift+'**.
+1. Abra um Terminal no VS Code selecionando **Terminal** e, em seguida, **Novo Terminal** ou use o atalho do teclado **Ctrl+Shift+`**.
 
 1. No painel **Terminal**, execute o seguinte comando `dotnet`:
 
